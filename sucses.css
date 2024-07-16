@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Background color */
+}
+
+.success-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Background color */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 300px;
+}
+
+.success-message {
+    font-size: 20px;
+    color: #4CAF50; /* Success message color */
+    margin-bottom: 20px;
+}
+
+.checkmark {
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50; /* Checkmark color */
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    animation: checkmark 0.6s ease-in-out forwards;
+}
+
+@keyframes checkmark {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 15px;
+    border: 2px solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    top: 15px;
+    left: 20px;
+}
+.button{
+    position: fixed;
+    bottom: 200px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #579659;
+    color: white;
+    border-radius: 10px;
+    padding: 12px;
+}
+.button:hover{
+    background-color: #4CAF50;
+}
